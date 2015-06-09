@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="octicons/octicons.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>GitHub Recreation</title>
+  <script type="text/template" id="myDemos">
+    <li class="postings"><%= name %><span><%= date %></span></li>
+  </script>
+</head>
+<body>
+  <div class ="header">
+    <div class="container">
+      <ul class="kitty">
+        <li><span class="mega-octicon octicon-mark-github"></span></li>
+      </ul>
+    <input class="searchbar" type="text" placeholder="Search GitHub">
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">Gist</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </nav>
+    <div class="name_options">
+      <ul>
+        <li><a class="name" href="kpittner"><img src="https://avatars.githubusercontent.com/u/12478022?v=3">&nbspkpittner</a></li>
+        <li><a href="#"><span class="octicon octicon-plus"></span><span class="octicon octicon-triangle-down"></span></a></li>
+        <li><a href="#"><span class="octicon octicon-inbox"></span></a></li>
+        <li><a href="#"><span class="octicon octicon-gear"></span></a></li>
+        <li><a href="#"><span class="octicon octicon-sign-out"></span></a></li>
+      </ul>
+    </div>
+    </div>
+  </div>
+  <div class="container2">
+    <div class="col-md-4">
+      <ul>
+        <li><a class="avatar" href="kpittner"><img src="https://avatars.githubusercontent.com/u/12478022?v=3"></a></li>
+        <li class="name">Kelsey Pittner</li>
+        <li class="username">kpittner</li>
+      </ul>
+      <ul class="datejoined">
+        <li><span class="octicon octicon-clock"></span>&nbspJoined on May 16, 2015</li>
+      </ul>
+      <div class="stats">
+        <a class="stat" href="">Followers
+          <strong class="stat-count">0</strong>
+        </a>
+        <a class="stat" href="">Starred
+          <strong class="stat-count">0</strong>
+        </a>
+        <a class="stat" href="">Following
+          <strong class="stat-count">0</strong>
+        </a>
+      </div>
+
+    </div>
+    <div class="col-md-8">
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#"><span class="octicon octicon-diff-added"></span>&nbspContributions</a></li>
+        <li role="presentation"><a href="#"><span class="octicon octicon-repo"></span>&nbspRepositories</a></li>
+        <li role="presentation"><a href="#"><span class="octicon octicon-rss"></span>&nbspPublic activity</a></li>
+      </ul>
+      <ul class="editprofile">
+        <button type="button" class="btn btn-default navbar-btn"><span class="octicon octicon-pencil"></span>&nbspEdit Profile</button>
+      </ul>
+
+      <div class="repos">
+
+
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+  <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="data.js"></script>
+  <script language = "javascript" type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
