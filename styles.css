@@ -100,13 +100,13 @@ ul.kitty {
 .col-md-8 {
   margin-top: 20px;
   padding: 0;
-  width: 68%;
+  width: 69%;
 }
 
 .col-md-4 {
   margin-top: 20px;
   padding: 0;
-  width: 30%;
+  width: 29%;
   margin-left: 20px;
 }
 
@@ -157,15 +157,28 @@ ul.nav nav-tabs {
   color: #ccc;
 }
 
+ul.datejoined {
+  border-top: 1px solid #eee;
+  width: 80%;
+  margin-left: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.datejoined li {
+  margin-left: 30px;
+}
+
 .stats {
+  width: 80%;
+  margin-left: 30px;
   text-align: center;
   margin-bottom: 10px;
   padding-top: 15px;
-  padding-bottom: 15px;
   text-align: center;
+  display: block;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
-  display: block;
 }
 
 .stat {
@@ -177,9 +190,146 @@ ul.nav nav-tabs {
   display: block;
   font-size: 28px;
   font-weight: bold;
+  display: block;
 }
 
-.postings {
+.postings_name {
   list-style-type: none;
+  font-weight: bold;
   color: #4078c0;
+  font-size: 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.postings_name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.postings_date {
+  color: #888;
+  font-size: 13px;
+}
+
+.postings_date:hover {
+  text-decoration: none;
+}
+
+.postings_lang {
+  margin-top: -50px;
+  float: right;
+  font-size: 12px;
+  font-weight: bold;
+  color: #888;
+}
+
+.organizations h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.organizations {
+  margin-left: 40px;
+}
+
+
+
+.repos-bar .searchbar {
+  display: inline-block;
+  font-weight: bold;
+  color: #333;
+  vertical-align: middle;
+  font-size: 13px;
+  width: 250px;
+  height:30px;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.repos-bar {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.repos .btn {
+  width: 70px;
+  height: 30px;
+  float: left;
+  background-color: #f5f5f5;
+  display: inline-block;
+  font-weight: bold;
+  color: #333;
+  border-style: solid;
+  border-color: #d5d5d5;
+  margin-left: 3px;
+  margin-top: 3px;
+}
+
+.repos .btn:hover {
+  background-color: #d5d5d5;
+}
+
+.repos .btn-success {
+  background-image: linear-gradient(#8add6d, #60b044);
+  width: 70px;
+  height: 30px;
+  float: right;
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.15)
+  background-color: #60b044;
+}
+
+.options li {
+  list-style-type: none;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.options li>a {
+  color: #337ab7;
+  padding-left: 10px;
+}
+
+.options ul {
+  margin-left: 400px;
+  margin-bottom: 0;
+  margin-top: 5px;
+  padding-left: 15px;
+}
+
+.options li>a:hover {
+  text-decoration: underline;
+  color: #337ab7;
+}
+
+.all li {
+  color: black;
+}
+
+.stargazers {
+  margin-left: 8px;
+  display: inline-block;
+  color: #888;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.forks {
+  margin-left: 8px;
+  display: inline-block;
+  color: #888;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.octicon-git-branch {
+  font: normal normal normal 13px/1 octicons;
+}
+
+.octicon-inbox {
+  font: normal normal normal 20px/1 octicons;
+
 }

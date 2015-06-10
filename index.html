@@ -7,7 +7,13 @@
   <link rel="stylesheet" href="styles.css">
   <title>GitHub Recreation</title>
   <script type="text/template" id="myDemos">
-    <li class="postings"><%= name %><span><%= date %></span></li>
+    <li class="postings_name"><%= name %><br>
+      <span class="postings_date"><%= date %></span><br>
+      <span class="postings_lang"><%= language %>&nbsp<a class="stargazers" href=""><span class="glyphicon glyphicon-star" aria-hidden="true">0</span></a>
+      <a class="forks" href=""><span class="octicon octicon-git-branch">&nbsp0</span></a></span></li>
+  </script>
+  <script type="text/template" id="myOrganizations">
+    <li><%= avatar %></li>
   </script>
 </head>
 <body>
@@ -47,42 +53,53 @@
         <li><span class="octicon octicon-clock"></span>&nbspJoined on May 16, 2015</li>
       </ul>
       <div class="stats">
-        <a class="stat" href="">Followers
-          <strong class="stat-count">0</strong>
-        </a>
-        <a class="stat" href="">Starred
-          <strong class="stat-count">0</strong>
-        </a>
-        <a class="stat" href="">Following
-          <strong class="stat-count">0</strong>
-        </a>
+        <a class="stat-count" href="">0</a>
+          <p class="stat">Followers</p>
+        <a class="stat-count" href="">0</a>
+          <p class="stat">Starred</p>
+        <a class="stat-count" href="">0</a>
+          <p class="stat">Following</p>
+      </div>
+      <div class="organizations">
+        <h3>Organizations<h3>
+
       </div>
 
     </div>
     <div class="col-md-8">
       <ul class="nav nav-tabs">
         <li role="presentation" class="active"><a href="#"><span class="octicon octicon-diff-added"></span>&nbspContributions</a></li>
-        <li role="presentation"><a href="#"><span class="octicon octicon-repo"></span>&nbspRepositories</a></li>
-        <li role="presentation"><a href="#"><span class="octicon octicon-rss"></span>&nbspPublic activity</a></li>
+        <li role="presentation"><a href="#repo"><span class="octicon octicon-repo"></span>&nbspRepositories</a></li>
+        <li role="presentation"><a href="#public"><span class="octicon octicon-rss"></span>&nbspPublic activity</a></li>
       </ul>
       <ul class="editprofile">
         <button type="button" class="btn btn-default navbar-btn"><span class="octicon octicon-pencil"></span>&nbspEdit Profile</button>
       </ul>
 
       <div class="repos">
+        <div class="repos-bar">
+          <input class="searchbar" type="text" placeholder="Find a repository...">
+          <button type="button" class="btn">Search</button>
+          <button type="button" class="btn btn-success"><span class="octicon octicon-repo"></span>&nbspNew</button>
+          <ul class="options">
+            <li class="all"><a href="#">All</a></li>
+            <li><a href="#">Public</a></li>
+            <li><a href="#">Private</a></li>
+            <li><a href="#">Sources</a></li>
+            <li><a href="#">Forks</a></li>
+            <li><a href="#">Mirrors</a></li>
+          </ul>
+        </div>
+      </div>
 
+      <div class="public">
 
 
       </div>
 
 
-
-
     </div>
   </div>
-
-
-
 
   <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
   <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
