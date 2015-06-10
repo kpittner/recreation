@@ -8,7 +8,7 @@
   <title>GitHub Recreation</title>
   <script type="text/template" id="myDemos">
     <li class="postings_name"><%= name %><br>
-      <span class="postings_date"><%= date %></span><br>
+      <span class="postings_date">Updated <%= date %> ago</span><br>
       <span class="postings_lang"><%= language %>&nbsp<a class="stargazers" href=""><span class="glyphicon glyphicon-star" aria-hidden="true">0</span></a>
       <a class="forks" href=""><span class="octicon octicon-git-branch">&nbsp0</span></a></span></li>
   </script>
@@ -62,7 +62,9 @@
       </div>
       <div class="organizations">
         <h3>Organizations<h3>
-
+        <ul>
+          <li><a class="org" href=""><img src="https://avatars.githubusercontent.com/u/12236563?v=3"></a></li>
+        </ul>
       </div>
 
     </div>

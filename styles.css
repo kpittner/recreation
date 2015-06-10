@@ -201,6 +201,7 @@ ul.datejoined {
   border-bottom: 1px solid #eee;
   margin-bottom: 30px;
   margin-top: 10px;
+  padding-bottom: 30px;
 }
 
 .postings_name:hover {
@@ -218,7 +219,7 @@ ul.datejoined {
 }
 
 .postings_lang {
-  margin-top: -50px;
+  margin-top: -35px;
   float: right;
   font-size: 12px;
   font-weight: bold;
@@ -331,5 +332,10 @@ ul.datejoined {
 
 .octicon-inbox {
   font: normal normal normal 20px/1 octicons;
+}
 
+.organizations li img {
+  float: left;
+  width: 42px;
+  height: 42px;
 }

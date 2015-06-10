@@ -16,18 +16,4 @@ $(document).ready(function() {
 
 
 
-<!--separation//////////////////////////////////-->
-
-  var organ = _.map(myOrgs, function(el) {
-    return {
-      avatar: el.avatar_url
-    }
-  });
-
-  var myOrganizations = _.template($('#myOrganizations').html());
-
-  _.each(organ, function(el){
-    $('.organizations').append(myOrganizations(el));
-  });
-
 });
