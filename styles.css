@@ -179,10 +179,17 @@ ul.datejoined {
   display: block;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
+  display: block;
 }
 
 .stat {
   color: #767676;
+  display: inline-block;
+}
+
+.stat a {
+  font-size: 2em;
+  text-decoration: none;
 }
 
 .stat-count {
