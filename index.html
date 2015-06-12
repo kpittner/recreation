@@ -77,14 +77,14 @@
     <div class="col-md-8">
       <ul class="nav nav-tabs">
         <li role="presentation" class="active"><a href="#"><span class="octicon octicon-diff-added"></span>&nbspContributions</a></li>
-        <li role="presentation"><a href="#repo"><span class="octicon octicon-repo"></span>&nbspRepositories</a></li>
-        <li role="presentation"><a href="#public"><span class="octicon octicon-rss"></span>&nbspPublic activity</a></li>
+        <li class ="repos-tab" role="presentation"><a href="#repo" rel=".repos"><span class="octicon octicon-repo"></span>&nbspRepositories</a></li>
+        <li class="public_tab" role="presentation"><a href="#public" rel=".public"><span class="octicon octicon-rss"></span>&nbspPublic activity</a></li>
       </ul>
       <ul class="editprofile">
         <button type="button" class="btn btn-default navbar-btn"><span class="octicon octicon-pencil"></span>&nbspEdit Profile</button>
       </ul>
 
-      <div class="repos">
+      <div class="repos active">
         <div class="repos-bar">
           <input class="searchbar" type="text" placeholder="Find a repository...">
           <button type="button" class="btn">Search</button>
@@ -100,8 +100,18 @@
         </div>
       </div>
 
-      <div class="public">
+      <div class="public page">
+        <script type="text/template" id="myPublic">
+          <li class="name"><%= name %><br>
+            <span class="master"><%= master %></span><br>
+            <span class="link"><%= link %></span><br>
+            <span class="avatar"><img src="<%= avatar %>"></span><br>
+            <% if(type === "PushEvent") { %>
+              <span class="message"><%= message %></span>
+              <span class="commits"><%= commits %></span>
+            <% } %>
 
+        </script>
 
       </div>
 
