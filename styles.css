@@ -355,3 +355,37 @@ ul.datejoined {
   width: 42px;
   height: 42px;
 }
+
+.octicon-git-commit {
+  color: grey;
+}
+
+.publicName {
+  color: #4078c0;
+  text-decoration: none;
+  font-size: 14px;
+  list-style-type: none;
+  display: inline;
+  font-weight: bold;
+}
+
+.publicPage {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+
+.avatar img {
+  height: 30px;
+  width: 30px;
+}
+
+.master, .link {
+  color: #4078c0;
+  font-weight: bold;
+}
+
+.p {
+  font-weight: bold;
+}

@@ -102,15 +102,17 @@
 
       <div class="public page">
         <script type="text/template" id="myPublic">
-          <li class="name"><%= name %><br>
-            <span class="master"><%= master %></span><br>
+          <div class="publicPage">
+          <span class="mega-octicon octicon-git-commit"></span>
+          <li class="publicName"><%= name %></li> <strong>pushed to</strong>
+            <span class="master"><%= master %></span> <strong>at</strong>
             <span class="link"><%= link %></span><br>
             <span class="avatar"><img src="<%= avatar %>"></span><br>
             <% if(type === "PushEvent") { %>
               <span class="message"><%= message %></span>
               <span class="commits"><%= commits %></span>
             <% } %>
-
+          </div>
         </script>
 
       </div>
